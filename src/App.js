@@ -3,7 +3,7 @@ import { lazy, Suspense } from 'react';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Header } from './components/';
+import { Header, Spinner } from './components/';
 
 const Main = lazy(() => import('./pages/Main'));
 const SignUp = lazy(() => import('./pages/SignUp'));
@@ -15,7 +15,7 @@ function App() {
       <Router>
         <div className='container px-5 mx-auto max-w-5xl'>
           <Header />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Spinner />}>
             <Routes>
               <Route path='/' element={<Main />} />
               <Route path='/signin' element={<SignIn />} />

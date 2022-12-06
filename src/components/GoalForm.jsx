@@ -21,9 +21,9 @@ const GoalForm = () => {
         className='input-field'
         name='text'
         value={text}
-        onChange={(e) => {
-          setText(e.target.value);
-        }}
+        onChange={(e) => setText(e.target.value)}
+        required=''
+        autoComplete='on'
       />
       <Button type='submit' title='Submit' styles='button w-full' />
     </form>

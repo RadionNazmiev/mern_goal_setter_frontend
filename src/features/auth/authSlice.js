@@ -12,7 +12,7 @@ const initialState = {
 };
 
 export const signUp = createAsyncThunk(
-  'auth/signUp',
+  'auth/signup',
   async (user, thunkAPI) => {
     try {
       return await authService.signUp(user);
@@ -27,7 +27,7 @@ export const signUp = createAsyncThunk(
 );
 
 export const signIn = createAsyncThunk(
-  'auth/signIn',
+  'auth/signin',
   async (user, thunkAPI) => {
     try {
       return await authService.signIn(user);
@@ -41,7 +41,7 @@ export const signIn = createAsyncThunk(
   }
 );
 
-export const signOut = createAsyncThunk('user/signOut', async () => {
+export const signOut = createAsyncThunk('auth/signout', async () => {
   await authService.signOut();
 });
 

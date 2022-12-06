@@ -61,20 +61,21 @@ const SignIn = () => {
         <input
           type='email'
           id='email'
+          name='email'
           onChange={onChange}
           className='input-field'
           placeholder='Enter your email'
-          required=''
           value={email}
+          required=''
           autoComplete='on'
         />
         <input
           type='password'
           id='password'
+          name='password'
           onChange={onChange}
           className='input-field'
           placeholder='Enter your password'
-          required=''
           value={password}
           autoComplete='on'
         />

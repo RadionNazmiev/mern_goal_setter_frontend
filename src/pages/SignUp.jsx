@@ -67,6 +67,7 @@ const SignUp = () => {
           type='text'
           id='name'
           value={name}
+          name='name'
           placeholder='Enter your name'
           className='input-field'
           onChange={onChange}
@@ -78,6 +79,7 @@ const SignUp = () => {
           value={email}
           className='input-field'
           placeholder='Enter your email'
+          name='email'
           required=''
           onChange={onChange}
           autoComplete='on'
@@ -85,6 +87,7 @@ const SignUp = () => {
         <input
           type='password'
           id='password'
+          name='password'
           value={password}
           className='input-field'
           placeholder='Enter your password'
@@ -96,6 +99,7 @@ const SignUp = () => {
           type='password'
           id='password2'
           value={password2}
+          name='password2'
           className='input-field'
           placeholder='Confirm your password'
           required=''

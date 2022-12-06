@@ -13,6 +13,7 @@ const Main = () => {
   const { goals, isLoading, isError, message } = useSelector(
     (state) => state.goals
   );
+ 
 
   useEffect(() => {
     if (isError) {
@@ -25,7 +26,7 @@ const Main = () => {
 
     return () => {
       dispatch(reset());
-    }
+    };
   }, [user, isError, navigate, message, dispatch]);
 
   if (isLoading) {
